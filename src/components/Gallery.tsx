@@ -5,6 +5,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+import "./gallery.css";
+
 export default function Gallery() {
   const photos = [
     "c6.jpeg",
@@ -22,20 +24,19 @@ export default function Gallery() {
   return (
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={50}
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
-      className="w-full"
+      loop
+      className="w-full max-w-4xl h-[550px] rounded-lg overflow-hidden"
     >
       {photos.map((photo, idx) => (
         <SwiperSlide>
           <img
             src={`/assets/${photo}`}
             alt={`Activity ${idx}`}
-            className="h-[350px] object-cover mx-auto"
+            loading="lazy"
+            className="w-full h-full object-cover mx-auto"
           />
         </SwiperSlide>
       ))}
