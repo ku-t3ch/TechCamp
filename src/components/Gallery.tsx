@@ -31,13 +31,14 @@ export default function Gallery() {
       className="w-full max-w-4xl h-[550px] rounded-lg overflow-hidden"
     >
       {photos.map((photo, idx) => (
-        <SwiperSlide>
+        <SwiperSlide className="relative">
           <img
             src={`/assets/${photo}`}
             alt={`Activity ${idx}`}
             loading="lazy"
-            className="w-full h-full object-cover mx-auto"
+            className="w-full h-full object-cover object-center mx-auto"
           />
+          <div className="absolute bottom-0 w-full h-20 bg-gradient-to-t from-neutral-900 to-transparent"></div>
         </SwiperSlide>
       ))}
     </Swiper>
