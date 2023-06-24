@@ -9,16 +9,16 @@ import "./gallery.css";
 
 export default function Gallery() {
   const photos = [
-    "c6.jpeg",
-    "c4.jpeg",
-    "c2.jpeg",
-    "c3.jpeg",
-    "c5.jpeg",
-    "c7.jpeg",
-    "c11.jpeg",
-    "c8.jpeg",
-    "c9.jpeg",
-    "c10.jpeg",
+    "c6.webp",
+    "c4.webp",
+    "c2.webp",
+    "c3.webp",
+    "c5.webp",
+    "c7.webp",
+    "c11.webp",
+    "c8.webp",
+    "c9.webp",
+    "c10.webp",
   ];
 
   return (
