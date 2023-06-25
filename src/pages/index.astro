@@ -8,7 +8,7 @@ import ActivityPhotos from '../components/home/ActivityPhotos.astro';
 ---
 
 <Layout title="Tech Camp #1">
-	<header class="relative bg-neutral-900">
+	<header class="relative bg-neutral-900 min-h-screen w-full">
 		<video autoplay muted loop playsinline id="myVideo">
 			<source src="/assets/Bg.webm" type="video/webm; codecs=vp9">
 			<source src="/assets/Bg.mp4" type="video/mp4">
@@ -30,13 +30,9 @@ import ActivityPhotos from '../components/home/ActivityPhotos.astro';
 
 <style scoped>
 video {
-	/* position: fixed; */
-  width: 100%;
-  min-height: 100vh;
-  z-index: -1;
-  overflow: hidden;
-	top: 0;
-  left: 0;
+	position: absolute;
+  min-width: 100%;
+  min-height: 100%;
 	object-fit: cover;
 	object-position: center;
 }

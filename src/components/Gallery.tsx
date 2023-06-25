@@ -31,7 +31,7 @@ export default function Gallery() {
       className="w-full max-w-4xl h-[550px] rounded-lg overflow-hidden"
     >
       {photos.map((photo, idx) => (
-        <SwiperSlide className="relative">
+        <SwiperSlide key={idx} className="relative">
           <img
             src={`/assets/${photo}`}
             alt={`Activity ${idx}`}
