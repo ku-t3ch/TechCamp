@@ -1,9 +1,9 @@
 import captureWebsite from "capture-website";
 
 async function capture() {
-  const nonGroup = [2, 3, 7, 9, 12, 13, 19, 20, 25, 26, 29];
+  const nonGroup = [2, 3, 7, 9, 12, 13, 19, 20, 25, 26, 29, 39, 40];
 
-  new Array(38).fill(0).forEach(async (_, i) => {
+  new Array(41).fill(0).forEach(async (_, i) => {
     if (nonGroup.includes(i + 1)) return;
     try {
       await captureWebsite.file(
