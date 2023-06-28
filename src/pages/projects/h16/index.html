@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  
+<nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="https://flowbite.com/" class="flex items-center">
+        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+    </a>
+    <div class="flex md:order-2">
+      <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1" >
+        <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+        <span class="sr-only">Search</span>
+      </button>
+      <div class="relative hidden md:block">
+        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+          <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+          <span class="sr-only">Search icon</span>
+        </div>
+        <input type="text" id="search-navbar" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+      </div>
+      <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-search" aria-expanded="false">
+        <span class="sr-only">Open menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      </button>
+    </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+        <div class="relative mt-3 md:hidden">
+          <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+          </div>
+          <input type="text" id="search-navbar" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+        </div>
+        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+<div class="fixed bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600">
+    <div class="grid h-full max-w-lg grid-cols-4 mx-auto font-medium">
+        <button type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+            <svg class="w-6 h-6 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+            </svg>
+            <span class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">Home</span>
+        </button>
+        <button type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+            <svg class="w-6 h-6 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path>
+                <path clip-rule="evenodd" fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"></path>
+            </svg>
+
+            <span class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">Settings</span>
+        </button>
+        <button type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+            <svg class="w-6 h-6 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path clip-rule="evenodd" fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"></path>
+            </svg>
+            <span class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">Profile</span>
+        </button>
+    </div>
+
+</div>
+<div class="flex justify-center">
+<a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://roijang.com/wp-content/uploads/2022/03/shutterstock_492752548.jpg" alt="">
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Dream world</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Dream world is a theme park on thailand and have many toy and amusement park rides.</p>
+    </div>
+</a>
+<div>
+<a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://img.salehere.co.th/p/1200x0/2021/11/17/t7wx5ckhsmb4.jpg" alt="">
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Rangsit Floating Market</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Rangsit Floating Market have many products for sale such as old thai sanck and noodles.</p>
+    </div>
+</div>
+</a>
+
+<a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://promotions.co.th/wp-content/uploads/2022/05/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C.jpg" alt="">
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Science museum</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">In science museum have technolgy and biology and science .</p>
+    </div>
+</a>
+</div>
+<div class="flex justify-center">
+<a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://s359.kapook.com/pagebuilder/8b46e2fa-e705-46af-afac-89238bfd8c72.jpg" alt="">
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Wisdom farm</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">In wisdom farm have a Wisdom cafe and Thai old style house and Market and Movie tirtor.</p>
+    </div>
+</a>
+
+<a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://www.homenayoo.com/wp-content/uploads/2020/12/future-park-rangsit-1.jpg" alt="">
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Future park Rangsit</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Future Park is mall bigest in pathumthani and have many technology.</p>
+    </div>
+</a>
+
+<a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://www.checkinchill.com/wp-content/uploads/2023-01-06.jpg" alt="">
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Na Phathum Cafe</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Na Phatum Cafe have many drink and food and mini train to see the atmosphere.</p>
+    </div>
+</div>
+<div class="flex justify-center">
+    <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://www.checkinchill.com/wp-content/uploads/shutterstock_2275235493.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">wat bot</h5>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Wat bot have a buddha for protection and have a market inside.</p>
+        </div>
+    </a>
+    
+    <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://www.checkinchill.com/wp-content/uploads/checkinchill-16-08-2021-147.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Dong tan sam kok</h5>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Dong tan sam kok have a good atmosphere for take a photo.</p>
+        </div>
+    </a>
+    
+    <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://www.checkinchill.com/wp-content/uploads/checkinchill-16-08-2021-162.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">talad ing nam sam kok</h5>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">talad nam sam kok have many food inside and toy so many.</p>
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://www.checkinchill.com/wp-content/uploads/rama9-1.jpeg" alt="">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Rama9 museum</h5>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Rama9 museum from king9 from thailand and inside have ecosystem.</p>
+            </div>
+        </a>
+        
+        <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://www.checkinchill.com/wp-content/uploads/checkinchill-16-08-2021-48.jpg" alt="">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Talad si mum muang</h5>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Talad si mum muang have many food and many furit.</p>
+            </div>
+        </a>
+        
+        <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://www.checkinchill.com/wp-content/uploads/checkinchill-16-08-2021-133.jpg" alt="">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Wat san jao</h5>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">In wat san jao have many buddha from chainese pepol.</p>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://s359.kapook.com/pagebuilder/8b46e2fa-e705-46af-afac-89238bfd8c72.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Wisdom farm</h5>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">In wisdom farm have a Wisdom cafe and Thai old style house and Market and Movie tirtor.</p>
+                </div>
+            </a>
+            
+            <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://www.homenayoo.com/wp-content/uploads/2020/12/future-park-rangsit-1.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Future park Rangsit</h5>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Future Park is mall bigest in pathumthani and have many technology.</p>
+                </div>
+            </a>
+            
+            <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="/docs/images/blog/image-4.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                </div>
+            </div>
+</body>
+</html>

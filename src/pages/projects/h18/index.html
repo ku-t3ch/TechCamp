@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .sidebar {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .sidebar-hidden {
+      transform: translateX(-100%);
+    }
+  </style>
+
+</head>
+<body>
+  
+<nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="https://en.wikipedia.org/wiki/Japan" class="flex items-center">
+          <img src="https://cdn.britannica.com/91/1791-004-DA3579A5/Flag-Japan.jpg" class="h-8 mr-3" alt="Flowbite Logo" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Fuji</span>
+      </a>
+      <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+          </li>
+          <li>
+              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Dropdown <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                    </li>
+                  </ul>
+                  <div class="py-1">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
+                  </div>
+              </div>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  <div class="fixed z-50 w-full h-16 max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-4 left-1/2 dark:bg-gray-700 dark:border-gray-600">
+    <div class="grid h-full max-w-lg grid-cols-5 mx-auto">
+        <button data-tooltip-target="tooltip-home" type="button" class="inline-flex flex-col items-center justify-center px-5 rounded-l-full hover:bg-gray-50 dark:hover:bg-gray-800 group">
+            <svg class="w-6 h-6 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+            </svg>
+            <span class="sr-only">Home</span>
+        </button>
+        <div id="tooltip-home" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+            Home
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+        <button data-tooltip-target="tooltip-wallet" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+            <svg class="w-6 h-6 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path>
+                <path clip-rule="evenodd" fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"></path>
+            </svg>
+            <span class="sr-only">Wallet</span>
+        </button>
+        <div id="tooltip-wallet" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+            Wallet
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+        <div class="flex items-center justify-center">
+            <button data-tooltip-target="tooltip-new" type="button" class="inline-flex items-center justify-center w-10 h-10 font-medium bg-blue-600 rounded-full hover:bg-blue-700 group focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path clip-rule="evenodd" fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"></path>
+                </svg>
+                <span class="sr-only">New item</span>
+            </button>
+        </div>
+        <div id="tooltip-new" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+            Create new item
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+        <button data-tooltip-target="tooltip-settings" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+            <svg class="w-6 h-6 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z"></path>
+            </svg>
+            <span class="sr-only">Settings</span>
+        </button>
+        <div id="tooltip-settings" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+            Settings
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+        <button data-tooltip-target="tooltip-profile" type="button" class="inline-flex flex-col items-center justify-center px-5 rounded-r-full hover:bg-gray-50 dark:hover:bg-gray-800 group">
+            <svg class="w-6 h-6 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path clip-rule="evenodd" fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"></path>
+            </svg>
+            <span class="sr-only">Profile</span>
+        </button>
+        <div id="tooltip-profile" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+            Profile
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+    </div>
+</div>
+<div class="flex justify-center">
+<div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <img src="https://res.cloudinary.com/jnto/image/upload/w_750,h_503,fl_lossy,f_auto/v1531981666/fujiguide/SG010_6">
+    <a href="https://www.google.com/maps?bih=969&biw=1920&hl=th&output=search&q=fuji+mountain&entry=mc&sa=X&ved=2ahUKEwj19KGX48n_AhXEm1YBHfCBDkgQ0pQJegQICxAB">
+        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need to know more about Fuji mountain?</h5>
+    </a>
+    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400"> The most beautiful mountain in Japan</p>
+    <a href="https://en.wikipedia.org/wiki/Mount_Fuji" class="inline-flex items-center text-blue-600 hover:underline">
+        See more information
+        <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+    </a>
+</div>
+
+
+<div class="flex justify-center">
+<div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <img src="https://lh5.googleusercontent.com/p/AF1QipODvU8rQduLFjPA81N-JUu3H7cV9sQoYuyZ0Y4n=w427-h240-k-no">
+    <a href="https://www.google.co.th/maps/place/Torii+Gate,+Itsukushima-jinja+Shrine/@35.0180914,135.7594883,17z/data=!3m1!4b1!4m6!3m5!1s0x600109b6dc1d3fc5:0xd6a775c50c2fa660!8m2!3d35.018087!4d135.7620632!16s%2Fg%2F11pc4jc3jg?hl=th&entry=ttu">
+        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need to know more about Torii gate?</h5>
+    </a>
+    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Torii gate </p>
+    <a href="https://en.wikipedia.org/wiki/Torii" class="inline-flex items-center text-blue-600 hover:underline">
+        See more information
+        <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+    </a>
+</div>
+</div>
+</div>
+
+<div class="flex justify-center">
+<div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <img src="https://res-3.cloudinary.com/jnto/image/upload/w_2064,h_1300,c_fill,f_auto,fl_lossy,q_auto/v1646014276/tokyo/H_00658_001">
+    <a href="https://www.google.com/maps/search/tokyo+tower/@35.6586515,139.7433037,17z/data=!3m1!4b1?entry=ttu">
+        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need to know more about Tokyo tower?</h5>
+    </a>
+    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">The one in Tokyo </p>
+    <a href="https://en.wikipedia.org/wiki/Tokyo_Tower" class="inline-flex items-center text-blue-600 hover:underline">
+        See more information
+        <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+    </a>
+</div>
+
+<div class="flex justify-center">
+    <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Himeji_castle_in_may_2015.jpg/1200px-Himeji_castle_in_may_2015.jpg">
+        <a href="https://www.google.com/maps?output=search&q=himeji+castle+wiki&entry=mc&sa=X&ved=2ahUKEwi6oKTW7cn_AhUNzmEKHfdUAdEQ0pQJegQIBRAB">
+            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need to know more about Himeji Castle?</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Himeji Castle </p>
+        <a href="https://en.wikipedia.org/wiki/Himeji_Castle" class="inline-flex items-center text-blue-600 hover:underline">
+            See more information
+            <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+        </a>
+    </div>
+    </div>
+    
+    <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <img src="https://cdn.britannica.com/30/180630-050-8B86D4B4/Great-Buddha-Hall-Todai-Temple-Japan-Nara.jpg">
+        <a href="https://www.google.com/maps/place/Todai-ji+Daibutsuden+(Great+Buddha+Hall)/@34.6889252,135.8376282,17z/data=!4m10!1m2!2m1!1stodaiji+temple!3m6!1s0x6001399a588f90d3:0x1d99db6bad6e7d27!8m2!3d34.6888653!4d135.839818!15sCg50b2RhaWppIHRlbXBsZZIBD2J1ZGRoaXN0X3RlbXBsZeABAA!16s%2Fg%2F12222267?hl=th&entry=ttu">
+            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need to know more about todaiji temple?</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">todaiji temple </p>
+        <a href="https://en.wikipedia.org/wiki/T%C5%8Ddai-ji" class="inline-flex items-center text-blue-600 hover:underline">
+            See more information
+            <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+        </a>
+    </div>
+    
+</body>
+</html>
